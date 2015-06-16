@@ -8,7 +8,7 @@ First, run:
 
     $ lein tk
 
-Then, open a browser and visit: `http://localhost:8080/hello/keyservice`
+Then, open a browser and visit: `http://localhost:8080/encrypt/key`
 
 ### Running from the REPL
 
