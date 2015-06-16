@@ -9,6 +9,7 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [compojure "1.2.0"]
+                 [ring/ring-json "0.3.1"]
                  [org.clojure/tools.logging "0.3.1"]
                  [puppetlabs/trapperkeeper ~tk-version]
                  [org.clojure/core.async "0.1.346.0-17112a-alpha"]
