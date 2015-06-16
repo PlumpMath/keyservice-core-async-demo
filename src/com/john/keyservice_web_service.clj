@@ -5,10 +5,9 @@
             [puppetlabs.trapperkeeper.core :as trapperkeeper]
             [puppetlabs.trapperkeeper.services :as tk-services]))
 
-(trapperkeeper/defservice hello-web-service
+(trapperkeeper/defservice key-web-service
   [[:ConfigService get-in-config]
    [:WebroutingService add-ring-handler get-route]
-   HelloService
    ChannelService]
   (init [this context]
     (log/info "Initializing hello webservice")
@@ -16,7 +15,7 @@
       (add-ring-handler
         this
         (compojure/context url-prefix []
-          (core/app (tk-services/get-service this :HelloService) (tk-services/get-service this :ChannelService))))
+          (core/app (tk-services/get-service this :ChannelService))))
       (assoc context :url-prefix url-prefix)))
 
   (start [this context]

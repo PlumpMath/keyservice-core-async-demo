@@ -6,7 +6,7 @@
             [compojure.route :as route]))
 
 (defn app
-  [hello-service channel-service]
+  [channel-service]
   (compojure/routes
     (compojure/GET "/encrypt/keys" []
       (fn [req]

@@ -7,6 +7,8 @@
   (println "Channel" channel)
   (async/go-loop []
     (let [new-key (java.util.UUID/randomUUID)]
-      (async/>!! channel new-key)
-      (log/info (str "New Key Added to channel: " (.toString new-key))))
-    (recur)))
+      (if-not (nil? channel)
+        (do
+          (async/>!! channel new-key)
+          (log/info (str "New Key Added to channel: " (.toString new-key)))
+          (recur))))))
