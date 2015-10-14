@@ -27,6 +27,7 @@
     <orderEntry type="library" name="Leiningen: puppetlabs/trapperkeeper:1.0.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Leiningen: puppetlabs/trapperkeeper:1.0.0" level="project" />
     <orderEntry type="library" name="Leiningen: ring-mock:0.1.5" level="project" />
+    <orderEntry type="library" name="Leiningen: ring/ring-json:0.3.1" level="project" />
     <orderEntry type="library" name="Leiningen: commons-codec:1.9" level="project" />
     <orderEntry type="library" name="Leiningen: commons-io:2.4" level="project" />
     <orderEntry type="library" name="Leiningen: crouton:0.1.2" level="project" />
