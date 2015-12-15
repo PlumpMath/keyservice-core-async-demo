@@ -16,7 +16,8 @@
                  [puppetlabs/trapperkeeper-webserver-jetty9 ~tk-jetty9-version]]
 
 	:plugins [[lein-release "1.0.5"]]
-	:lein-release {:scm :git}
+	:lein-release {:scm :git
+								 :deploy-via :lein-install}
   :profiles {:dev {:source-paths ["dev"]
                    :dependencies [[puppetlabs/trapperkeeper ~tk-version :classifier "test" :scope "test"]
                                   [puppetlabs/kitchensink ~ks-version :classifier "test" :scope "test"]
