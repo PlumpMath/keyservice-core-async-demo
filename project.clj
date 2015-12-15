@@ -15,6 +15,8 @@
                  [org.clojure/core.async "0.1.346.0-17112a-alpha"]
                  [puppetlabs/trapperkeeper-webserver-jetty9 ~tk-jetty9-version]]
 
+	:plugins [[lein-release "1.0.5"]]
+	:lein-release {:scm :git}
   :profiles {:dev {:source-paths ["dev"]
                    :dependencies [[puppetlabs/trapperkeeper ~tk-version :classifier "test" :scope "test"]
                                   [puppetlabs/kitchensink ~ks-version :classifier "test" :scope "test"]
